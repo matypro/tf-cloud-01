@@ -7,8 +7,9 @@ resource "aws_instance" "server1" {
   vpc_security_group_ids = [aws_security_group.sec_web.id]
  
   tags = {
-    Name    = "vm-${local.name_suffix}-1"
-    Project = var.company
+    Name        = "vm-${local.name_suffix}-1"
+    Project     = var.company
+    Laboratorio = var.lab_number
   }
 }
 
