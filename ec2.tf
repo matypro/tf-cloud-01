@@ -10,6 +10,7 @@ resource "aws_instance" "server1" {
     Name        = "vm-${local.name_suffix}-1"
     Project     = var.company
     Laboratorio = var.lab_number
+    Instance    = var.instance_type
   }
 }
 
